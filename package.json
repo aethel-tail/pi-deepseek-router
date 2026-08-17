@@ -1,0 +1,28 @@
+{
+  "name": "pi-deepseek-router",
+  "version": "0.1.0",
+  "description": "Task-aware reasoning-mode router + two-phase tool anchoring for DeepSeek-family models on pi",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aethel-tail/pi-deepseek-router"
+  },
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test router-core.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.2",
+    "@types/node": "^24.13.3",
+    "typescript": "^5.0.0"
+  }
+}
