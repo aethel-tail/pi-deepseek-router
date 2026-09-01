@@ -118,7 +118,7 @@ export function coreFor(mode: Mode): string[] {
 		case "weak":
 			return ["bash", "edit"]; // RL shape: shell + editor
 		default:
-			return ["bash", "read", "write", "edit"]; // write-first + shell
+			return ["read", "write", "edit"]; // write-first (upstream v34: shell is added dynamically, not part of the core set)
 	}
 }
 

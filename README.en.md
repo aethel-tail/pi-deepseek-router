@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-Task-aware reasoning-mode router + two-phase tool anchoring for DeepSeek-family models on pi. The mechanism is ported from [xiaobright/dsh-router-standard](https://github.com/xiaobright/dsh-router-standard) and [xiaobright/dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard) (both MIT; the trajectory lexicon classifier comes from xiaobright/modeltest trigger_probe, MIT).
+Task-aware reasoning-mode router + two-phase tool anchoring for DeepSeek-family models on pi. The mechanism is ported from [yjh051108/dsh-router-standard](https://github.com/yjh051108/dsh-router-standard) and [xiaobright/dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard) (both MIT; the trajectory lexicon classifier is ported from xiaobright/modeltest trigger_probe, MIT, whose experiment tooling now lives in the DeepseekCotexplorations research repo).
 
 **Experimental.** The upstream score gains were measured only on DeepSeek V4 Pro/Flash, and the theoretical explanation was formally retracted by its author (the engineering gains stand). On other models this extension stays inert unless you force a mode with `/router-mode`. Not affiliated with or endorsed by DeepSeek; "DeepSeek" is a trademark of its respective owner.
 

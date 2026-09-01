@@ -34,6 +34,7 @@ test("coreFor: weak gets RL-shape bash+edit", () => {
 	assert.deepEqual(coreFor(MODE_WEAK), ["bash", "edit"]);
 	assert.ok(coreFor(0).includes("read") && !coreFor(0).includes("bash"));
 	assert.ok(coreFor(1).includes("write"));
+assert.ok(!coreFor(1).includes("bash")); // v34: react core is write-first without shell
 });
 
 test("parseMode tokens", () => {

@@ -3,9 +3,10 @@
 [English](README.en.md)
 
 DeepSeek 专用的 pi 扩展包：任务感知的思维模式路由 + 两阶段工具锚定。
-机制移植自 [xiaobright/dsh-router-standard](https://github.com/xiaobright/dsh-router-standard)
+机制移植自 [yjh051108/dsh-router-standard](https://github.com/yjh051108/dsh-router-standard)
 与 [xiaobright/dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard)
-（均 MIT，轨迹词法分类器来自 xiaobright/modeltest trigger_probe，MIT）。
+（均 MIT；轨迹词法分类器移植自 xiaobright/modeltest trigger_probe，MIT，
+该实验工具现已迁移至 DeepseekCotexplorations 研究仓库）。
 
 **实验性。** 上游的提分数据仅在 DeepSeek V4 Pro/Flash 上实测有效，且其理论解释
 已被原作者勘误（工程增益保留）。对其他模型本扩展默认惰性，除非手动 `/router-mode` 强制。
